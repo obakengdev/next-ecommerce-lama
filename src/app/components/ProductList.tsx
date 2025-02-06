@@ -11,7 +11,7 @@ export const ProductList = () => {
       >
         <div className="relative w-full h-80">
           <Image
-            src="https://images.pexels.com/photos/12446409/pexels-photo-12446409.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/12446409/pexels-photo-12446409.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt=""
             fill
             sizes="25vw"
