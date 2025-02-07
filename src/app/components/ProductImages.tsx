@@ -1,0 +1,57 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+
+const images = [
+  {
+    id: 1,
+    url: "https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 1,
+    url: "https://images.pexels.com/photos/1666405/pexels-photo-1666405.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 1,
+    url: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 1,
+    url: "https://images.pexels.com/photos/8365693/pexels-photo-8365693.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+];
+
+export const ProductImages = () => {
+  const [index, setIndex] = useState(0);
+  return (
+    <div>
+      <div className="h-[500px] relative">
+        <Image
+          src={images[index].url}
+          alt=""
+          fill
+          sizes="50vw"
+          className="object-cover rounded-md"
+        />
+      </div>
+      <div className="flex justify-between gap-4 mt-8">
+        {images.map((img, i) => (
+          <div
+            className="w-1/4 h-32 relative gap-4 mt-8 cursor-pointer"
+            key={img.id}
+            onClick={() => setIndex(i)}
+          >
+            <Image
+              src={img.url}
+              alt=""
+              fill
+              sizes="30vw"
+              className="object-cover rounded-md"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
