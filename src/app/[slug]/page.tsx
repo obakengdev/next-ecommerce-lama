@@ -54,7 +54,6 @@ export const SinglePage = () => {
           </p>
         </div>
       </div>
-      {/* 1:46:29 */}
     </div>
   );
 };
