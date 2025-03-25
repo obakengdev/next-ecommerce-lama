@@ -9,15 +9,15 @@ const images = [
     url: "https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 1,
+    id: 2,
     url: "https://images.pexels.com/photos/1666405/pexels-photo-1666405.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 1,
+    id: 3,
     url: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 1,
+    id: 4,
     url: "https://images.pexels.com/photos/8365693/pexels-photo-8365693.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
 ];
